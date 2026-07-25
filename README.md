@@ -8,9 +8,6 @@ An interactive, executive-ready retail analytics command center built in Microso
 ---
 
 ## Business Case & Objectives
-Microsoft Excel. This workbook ingests multi-year transaction logs, engineers dynamic inventory safety thresholds, corrects unweighted profit margin distortions, and isolates regional stockout exposure in real time.
-
-Business Case & Objectives
 Retail operations managers frequently face visibility gaps where high-level revenue numbers mask underlying operational friction—such as unprofitable product lines, distorted profit margin metrics, and regional inventory stockouts.
 
 This project bridges that gap by transforming raw store sales records (~10,000 transactions) into a modular, interactive operational audit. The objective is to provide executive leadership with a single-screen decision hub that tracks:
