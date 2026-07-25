@@ -18,6 +18,8 @@ This project bridges that gap by transforming raw store sales records (~10,000 t
 
 * Inventory Health: Identifying localized stockout risks and reorder priorities across geographic regions.
 
+  
+
 <img width="800" height="503" alt="ezgif com-optimize" src="https://github.com/user-attachments/assets/f0dec171-7205-4843-b879-f29700a49bd3" />
 
 ---
@@ -37,7 +39,7 @@ This project bridges that gap by transforming raw store sales records (~10,000 t
 │   └── raw/
 │       └── Sample - Superstore.csv         # Source Kaggle retail transaction dataset
 ├── excel/
-│   └── Retail_Performance_Audit.xlsx      # Master interactive Excel workbook
+│   └── performance_audit.xlsx      # Master interactive Excel workbook
 └── README.md                              # Master project documentation
 ```
 ---
@@ -49,15 +51,15 @@ This project bridges that gap by transforming raw store sales records (~10,000 t
 
 * Operational Helper Columns:
 
-Total Cost = =[@Sales] - [@Profit]
+  * Total Cost = =[@Sales] - [@Profit]
 
-Profit Margin % = =[@Profit] / [@Sales]
+  * Profit Margin % = =[@Profit] / [@Sales]
 
-Current Stock = Generates mock operational inventory counts via =RANDBETWEEN(5, 100) (frozen as static values).
+  * Current Stock = Generates mock operational inventory counts via =RANDBETWEEN(5, 100) (frozen as static values).
 
-Reorder Threshold = Fixed baseline stock limit (20 units).
+  * Reorder Threshold = Fixed baseline stock limit (20 units).
 
-Reorder Flag = =IF([@[Current Stock]] <= [@[Reorder Threshold]], "REORDER", "OK")
+  * Reorder Flag = =IF([@[Current Stock]] <= [@[Reorder Threshold]], "REORDER", "OK")
 
 ### Phase 2: Modular Analytics Layer (02_ to 04_)
 * Category Financials (02_category_financials): Audits revenue and profit across product hierarchies. Implements a custom Pivot Calculated Field (= Profit / Sales) to compute true weighted margins, fixing the unweighted average margin skew on discounted items (e.g., correcting Binders from an unweighted -20% mean to a true +15% weighted margin).
