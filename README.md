@@ -27,7 +27,7 @@ This project bridges that gap by transforming raw store sales records (~10,000 t
 ## Tech Stack & Tools
 * Core Analytics Engine: Microsoft Excel
 
-* Data Modeling & Calculation: Pivot Tables, Pivot Calculated Fields (= Profit / Sales), Structured Table Formulas ([@Sales] - [@Profit], IF(), RANDBETWEEN()), GETPIVOTDATA(), Defensive Error Handling (IFERROR())
+* Data Modeling & Calculation: Pivot Tables, Pivot Calculated Fields (= Profit / Sales), Structured Table Formulas ([@Sales] - [@Profit], IF(), RANDBETWEEN()), GETPIVOTDATA()
 
 * Interactive UI & Visualization: Connected Slicers, Custom PivotCharts (Line & Clustered Bar), Dynamic KPI Summary Cards
 
