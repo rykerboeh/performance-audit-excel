@@ -71,7 +71,7 @@ This project bridges that gap by transforming raw store sales records (~10,000 t
 ### Phase 3: Logic Abstraction & Executive Dashboard (05_ & 06_)
 * Reference Scratchpad (05_reference): Utilizes GETPIVOTDATA() wrapped inside IFERROR() to pull dynamic totals directly from the calculation layer, shielding the presentation layer from layout shifts or #REF! errors.
 
-* Executive Dashboard (06_dashboard): A visual grid featuring 4 dynamic KPI cards, 3 styled PivotCharts, and 4 global Slicers (Year, Region, Segment, Category) cross-connected to filter the entire dashboard synchronously.
+* Executive Dashboard (06_dashboard): A visual grid featuring 4 dynamic KPI cards, 3 styled PivotCharts, and 4 global Slicers (Year, Region, Segment, Category) cross-connected to filter the entire dashboard.
 
 ## Key Business Insights
 * Margin Distortion Uncovered: Relying on simple row-level margin averages heavily misrepresents sub-category health. While unweighted calculations flagged Binders as heavily loss-making (-20%), true volume-weighted analysis revealed a healthy +15% profit margin contribution.
